@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mindset/screens/register/register_ctrl.dart';
+import 'package:starter_kit/screens/register/register_ctrl.dart';
 
 class RegisterBinding extends Bindings {
   @override

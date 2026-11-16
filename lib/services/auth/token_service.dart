@@ -1,5 +1,5 @@
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/store.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/store.dart';
 
 class TokenService {
   Future<bool> deleteToken() async {

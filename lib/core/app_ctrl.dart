@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/services/auth/token_service.dart';
-import 'package:mindset/services/user_service.dart';
-import 'package:mindset/services/currency_service.dart';
-import 'package:mindset/services/language_service.dart';
-import 'package:mindset/services/theme_service.dart';
-import 'package:mindset/utils/alerts.dart';
-import 'package:mindset/entities/user.dart';
-import 'package:mindset/routes/routes.dart';
+import 'package:starter_kit/services/auth/token_service.dart';
+import 'package:starter_kit/services/user_service.dart';
+import 'package:starter_kit/services/currency_service.dart';
+import 'package:starter_kit/services/language_service.dart';
+import 'package:starter_kit/services/theme_service.dart';
+import 'package:starter_kit/utils/alerts.dart';
+import 'package:starter_kit/entities/user.dart';
+import 'package:starter_kit/routes/routes.dart';
 
 class AppCtrl extends GetxController {
   final TokenService tokenService = TokenService();

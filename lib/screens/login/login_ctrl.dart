@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:mindset/core/app_ctrl.dart';
-import 'package:mindset/http/requests/auth_request.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/services/auth/auth_service.dart';
+import 'package:starter_kit/core/app_ctrl.dart';
+import 'package:starter_kit/http/requests/auth_request.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/services/auth/auth_service.dart';
 
 class LoginController extends AppCtrl {
   // user form fields

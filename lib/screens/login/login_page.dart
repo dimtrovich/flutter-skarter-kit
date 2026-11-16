@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter/gestures.dart';
-import 'package:mindset/components/form/index.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/screens/login/login_ctrl.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/components/form/index.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/screens/login/login_ctrl.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

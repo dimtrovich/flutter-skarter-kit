@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:intl_phone_field/countries.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_field/phone_number.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class AppTelInput extends StatelessWidget {
   final TextEditingController? controller;

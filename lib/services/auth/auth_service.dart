@@ -1,7 +1,7 @@
-import 'package:mindset/core/remote/api.dart';
-import 'package:mindset/core/remote/remote_error.dart';
-import 'package:mindset/core/remote/remote_response.dart';
-import 'package:mindset/http/requests/auth_request.dart';
+import 'package:starter_kit/core/remote/api.dart';
+import 'package:starter_kit/core/remote/remote_error.dart';
+import 'package:starter_kit/core/remote/remote_response.dart';
+import 'package:starter_kit/http/requests/auth_request.dart';
 
 class AuthService {
   Future<void> login(
@@ -10,7 +10,7 @@ class AuthService {
     Function(dynamic response)? onSuccess,
     Function(RemoteError error)? onError,
   }) async {
-    Api(
+    await Api(
       'auth/login',
       data: request.toMap(),
     ).post(beforeSend: beforeSend, onSuccess: onSuccess, onError: onError);
@@ -22,7 +22,7 @@ class AuthService {
     Function(RemoteResponse response)? onSuccess,
     Function(RemoteError error)? onError,
   }) async {
-    Api(
+    await Api(
       'auth/register',
       data: request.toMap(),
     ).post(beforeSend: beforeSend, onSuccess: onSuccess, onError: onError);

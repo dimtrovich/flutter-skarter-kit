@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/screens/onboarding/onboarding_ctrl.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/screens/onboarding/onboarding_ctrl.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class OnboardingThree extends GetWidget<OnboardingCtrl> {
   const OnboardingThree({super.key});

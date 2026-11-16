@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class AppDropdownField extends StatelessWidget {
   final String? errorText;

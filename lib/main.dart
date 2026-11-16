@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:mindset/routes/pages.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/services/currency_service.dart';
-import 'package:mindset/services/language_service.dart';
-import 'package:mindset/services/theme_service.dart';
-import 'package:mindset/utils/app_colors.dart';
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/translations.dart';
+import 'package:starter_kit/routes/pages.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/services/currency_service.dart';
+import 'package:starter_kit/services/language_service.dart';
+import 'package:starter_kit/services/theme_service.dart';
+import 'package:starter_kit/utils/app_colors.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/translations.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

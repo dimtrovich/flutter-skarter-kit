@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/store.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/store.dart';
 
 class LanguageController extends GetxController {
   static LanguageController get to => Get.find<LanguageController>();

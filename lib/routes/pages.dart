@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/screens/home/export.dart';
-import 'package:mindset/screens/login/export.dart';
-import 'package:mindset/screens/onboarding/export.dart';
-import 'package:mindset/screens/register/export.dart';
-import 'package:mindset/screens/splash_screen/export.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/screens/home/export.dart';
+import 'package:starter_kit/screens/login/export.dart';
+import 'package:starter_kit/screens/onboarding/export.dart';
+import 'package:starter_kit/screens/register/export.dart';
+import 'package:starter_kit/screens/splash_screen/export.dart';
 
 class Pages {
   static final pages = [

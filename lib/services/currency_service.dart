@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:mindset/entities/currency.dart';
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/store.dart';
+import 'package:starter_kit/entities/currency.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/store.dart';
 
 class CurrencyService extends GetxController {
   static CurrencyService get to => Get.find<CurrencyService>();

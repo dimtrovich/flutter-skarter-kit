@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:get/get.dart';
-import 'package:mindset/components/form/index.dart';
+import 'package:starter_kit/components/form/index.dart';
 
 class AppDatalistInput extends StatelessWidget {
   final TextEditingController? controller;

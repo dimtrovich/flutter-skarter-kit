@@ -1,4 +1,4 @@
-import 'package:mindset/screens/splash_screen/splash_screen_ctrl.dart';
+import 'package:starter_kit/screens/splash_screen/splash_screen_ctrl.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

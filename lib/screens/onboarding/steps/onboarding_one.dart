@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/components/form/outline_button.dart';
-import 'package:mindset/screens/onboarding/onboarding_ctrl.dart';
+import 'package:starter_kit/components/form/outline_button.dart';
+import 'package:starter_kit/screens/onboarding/onboarding_ctrl.dart';
 
 class OnboardingOne extends GetWidget<OnboardingCtrl> {
   const OnboardingOne({super.key});

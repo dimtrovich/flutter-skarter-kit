@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:mindset/services/currency_service.dart';
+import 'package:starter_kit/services/currency_service.dart';
 
 class Formatter {
   static String? date(DateTime? date, {String format = 'dd MMM yyyy - HH:mm'}) {

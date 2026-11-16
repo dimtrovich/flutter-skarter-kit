@@ -1,17 +1,24 @@
-# mindset
+# Starter Kit
 
-A new Flutter project.
+A compact Flutter starter app demonstrating:
 
-## Getting Started
+- French and English localization with GetX, persisted between launches.
+- Light and dark themes with persisted preferences.
+- Named routes and example login/register screens.
+- API requests with Dio, including loading and error states.
+- Reusable storage, formatting, currency, and form helpers.
 
-This project is a starting point for a Flutter application.
+## Run
 
-A few resources to get you started if this is your first Flutter project:
+```sh
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+The app opens directly on the feature showcase. Its API button requests
+`posts/1` from JSONPlaceholder. Set `API_BASE_URL` when running or building to
+point the API service at your backend:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+flutter run --dart-define=API_BASE_URL=https://api.example.com/
+```

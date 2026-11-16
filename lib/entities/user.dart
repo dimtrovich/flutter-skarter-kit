@@ -1,4 +1,4 @@
-import 'package:mindset/utils/formatter.dart';
+import 'package:starter_kit/utils/formatter.dart';
 
 class User {
   int? id;

@@ -1,4 +1,4 @@
-import 'package:mindset/screens/home/home_ctrl.dart';
+import 'package:starter_kit/screens/home/home_ctrl.dart';
 import 'package:get/get.dart';
 
 class HomeBinding extends Bindings {

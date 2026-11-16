@@ -1,9 +1,9 @@
-import 'package:mindset/components/form/outline_button.dart';
-import 'package:mindset/screens/onboarding/onboarding_ctrl.dart';
+import 'package:starter_kit/components/form/outline_button.dart';
+import 'package:starter_kit/screens/onboarding/onboarding_ctrl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class OnboardingPage extends GetWidget<OnboardingCtrl> {
   const OnboardingPage({super.key});

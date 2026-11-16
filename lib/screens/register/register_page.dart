@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/components/form/index.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/screens/register/register_ctrl.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/components/form/index.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/screens/register/register_ctrl.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});

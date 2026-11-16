@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:mindset/core/app_ctrl.dart';
-import 'package:mindset/routes/routes.dart';
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/store.dart';
+import 'package:starter_kit/core/app_ctrl.dart';
+import 'package:starter_kit/routes/routes.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/store.dart';
 
 class SplashScreenCtrl extends AppCtrl {
   @override

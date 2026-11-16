@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:mindset/core/remote/api.dart';
-import 'package:mindset/core/remote/remote_error.dart';
-import 'package:mindset/entities/user.dart';
-import 'package:mindset/utils/constants.dart';
-import 'package:mindset/utils/store.dart';
+import 'package:starter_kit/core/remote/api.dart';
+import 'package:starter_kit/core/remote/remote_error.dart';
+import 'package:starter_kit/entities/user.dart';
+import 'package:starter_kit/utils/constants.dart';
+import 'package:starter_kit/utils/store.dart';
 
 class UserService {
   Future<User?> getLoggedUserInfo() async {
@@ -50,7 +50,7 @@ class UserService {
     Function(User user)? onSuccess,
     Function(RemoteError error)? onError,
   }) async {
-    Api('auth/me').get(
+    await Api('auth/me').get(
       onSuccess: (data) {
         onSuccess!(User.fromJson(data.result));
       },

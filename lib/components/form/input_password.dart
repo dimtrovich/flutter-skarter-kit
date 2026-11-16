@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mindset/components/form/index.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/components/form/index.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class AppInputPassword extends StatefulWidget {
   final bool autofocus;

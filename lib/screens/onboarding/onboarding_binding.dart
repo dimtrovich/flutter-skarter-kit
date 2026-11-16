@@ -1,4 +1,4 @@
-import 'package:mindset/screens/onboarding/onboarding_ctrl.dart';
+import 'package:starter_kit/screens/onboarding/onboarding_ctrl.dart';
 import 'package:get/get.dart';
 
 class OnboardingBinding extends Bindings {

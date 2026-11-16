@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mindset/utils/app_colors.dart';
+import 'package:starter_kit/utils/app_colors.dart';
 
 class OutlineButton extends StatelessWidget {
   const OutlineButton({super.key, this.onTap, this.title});

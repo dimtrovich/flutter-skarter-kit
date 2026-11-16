@@ -1,0 +1,19 @@
+{
+  "welcome_user": "Bonjour, @name 👋",
+  "messages": "Messages",
+  "profile": "Profil",
+  "theme": "Apparence",
+  "theme_light": "Clair",
+  "theme_dark": "Sombre",
+  "theme_system": "Système",
+  "language": "Langue",
+  "login_title": "Bon retour 👋",
+  "register_title": "Créer un compte",
+  "phone_label": "Numéro de téléphone",
+  "continue_btn": "Continuer",
+  "otp_title": "Vérifiez votre numéro",
+  "otp_subtitle": "Saisissez le code à 6 chiffres envoyé par SMS / WhatsApp au",
+  "verify_btn": "Vérifier et continuer",
+  "see_all": "Voir tout",
+  "logout": "Se déconnecter"
+}

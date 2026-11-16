@@ -3,5 +3,6 @@ export './datalist_input.dart';
 export './dropdown_field.dart';
 export './input.dart';
 export './input_password.dart';
+export './outline_button.dart';
 export './radio.dart';
 export './tel_input.dart';

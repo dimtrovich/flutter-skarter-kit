@@ -16,6 +16,14 @@ class Store {
     }
     return result as String;
   }
+
+  static Future<bool?> getBool(String key) async {
+    var result = await Store.get(key);
+    if (result == null) {
+      return null;
+    }
+    return result as bool;
+  }
   
   static Future<bool> set(String key, dynamic value) async {
     SharedPreferences pref = await SharedPreferences.getInstance();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mindset/components/form/index.dart';
+import 'package:mindset/utils/app_colors.dart';
 
 class AppInputPassword extends StatefulWidget {
   final bool autofocus;
@@ -16,6 +17,7 @@ class AppInputPassword extends StatefulWidget {
   final FocusNode? focusNode;
   final Brightness? keyboardAppearance;
   final String? label;
+  final Widget? prefixIcon;
   final void Function()? onTap;
   final void Function(String)? onChanged;
   final String? placeholder;
@@ -38,6 +40,7 @@ class AppInputPassword extends StatefulWidget {
     this.focusNode,
     this.keyboardAppearance,
     this.label = 'Mot de passe',
+    this.prefixIcon,
     this.onChanged,
     this.onTap,
     this.placeholder,
@@ -71,18 +74,21 @@ class _AppInputPasswordState extends State<AppInputPassword> {
       keyboardAppearance: widget.keyboardAppearance,
       onChanged: widget.onChanged,
       onTap: widget.onTap,
-      placeholder: widget.placeholder,
+      placeholder: widget.placeholder ?? 'Mot de passe',
       readOnly: widget.readOnly,
       type: passwordVisible ? 'text' : 'password',
       value: widget.value,
       vmodel: widget.vmodel,
+      prefixIcon: widget.prefixIcon ?? const Icon(
+        Icons.lock_outline_rounded,
+        color: Color(0xFFADB5BD),
+      ),
       suffixIcon: IconButton(
-        icon: Icon(passwordVisible ? Icons.visibility_off : Icons.visibility),
-        onPressed: () {
-          setState(() {
-            passwordVisible = !passwordVisible;
-          });
-        },
+        icon: Icon(
+          passwordVisible ? Icons.visibility_off_outlined : Icons.visibility_outlined,
+          color: AppColors.textSecondaryLight,
+        ),
+        onPressed: () => setState(() => passwordVisible = !passwordVisible),
       ),
     );
   }

@@ -9,7 +9,7 @@ import 'package:mindset/screens/splash_screen/export.dart';
 class Pages {
   static final pages = [
     GetPage(
-      name: Routes.splashcreen,
+      name: Routes.splashscreen,
       page: () => const SplashScreenPage(),
       bindings: [SplashScreenBinding()],
     ),

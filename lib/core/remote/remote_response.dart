@@ -18,7 +18,7 @@ class RemoteResponse {
   factory RemoteResponse.fromMap(Map<String, dynamic> json) => RemoteResponse(
     success: json["success"] ?? false,
     message: json["message"],
-    result: json["result"],
+    result: json["result"] ?? json["data"],
   );
 
   Map<String, dynamic> toMap() => {

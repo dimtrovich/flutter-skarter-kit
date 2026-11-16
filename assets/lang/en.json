@@ -1,0 +1,19 @@
+{
+  "welcome_user": "Hello, @name 👋",
+  "messages": "Messages",
+  "profile": "Profile",
+  "theme": "Appearance",
+  "theme_light": "Light",
+  "theme_dark": "Dark",
+  "theme_system": "System",
+  "language": "Language",
+  "login_title": "Welcome back 👋",
+  "register_title": "Create an account",
+  "phone_label": "Phone number",
+  "continue_btn": "Continue",
+  "otp_title": "Verify your number",
+  "otp_subtitle": "Enter the 6-digit code sent via SMS / WhatsApp to",
+  "verify_btn": "Verify & continue",
+  "see_all": "See all",
+  "logout": "Sign out"
+}

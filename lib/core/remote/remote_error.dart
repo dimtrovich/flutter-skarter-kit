@@ -8,14 +8,20 @@ class RemoteError {
 
   RemoteError({this.exception, this.code, this.errors, this.message});
 
-  static RemoteError fromDio(DioException error) {
-    Map<String, dynamic> data = error.response!.data;
+  static RemoteError fromDio(dynamic error) {
+    if (error is DioException) {
+      final rawData = error.response?.data;
+      final Map<String, dynamic> data =
+          rawData is Map<String, dynamic> ? rawData : {};
 
-    return RemoteError(
-      message: data['message'] ?? error.message,
-      code: data.containsKey('code') ? data['code'] : null,
-      errors: data.containsKey('errors') ? data['errors'] : null,
-      exception: error,
-    );
+      return RemoteError(
+        message: data['message']?.toString() ?? error.message ?? 'Erreur réseau',
+        code: data.containsKey('code') ? data['code'] : error.response?.statusCode,
+        errors: data.containsKey('errors') ? data['errors'] : null,
+        exception: error,
+      );
+    }
+
+    return RemoteError(message: error?.toString() ?? 'Erreur inconnue');
   }
 }

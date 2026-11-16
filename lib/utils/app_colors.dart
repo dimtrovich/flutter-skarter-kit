@@ -1,76 +1,37 @@
 import 'package:flutter/material.dart';
 
-abstract class AppColors {
-  static const Color primary = Color(0xFF2DD4BF); // Vert d'eau lumineux
+class AppColors {
+  // Couleurs principales
+  static const Color primary = Color(0xFF0B1526); // Bleu nuit profond
+  static const Color primaryDark = Color(0xFF070E18);
+  static const Color primaryLight = Color(0xFF1A2A44);
 
-  // ==========================================
-  // PALETTE PRIMAIRE & DÉGRADÉS (MindSet Brand)
-  // ==========================================
-  static const Color primaryMint = Color(0xFF2DD4BF); // Vert d'eau lumineux
-  static const Color primaryTeal = Color(0xFF0F766E); // Vert canard profond
-  static const Color accentCyan = Color(0xFF22D3EE); // Cyan d'accentuation
+  static const Color secondary = Color(0xFFE65100); // Orange ambré commercial
+  static const Color secondaryLight = Color(0xFFFF6D00);
 
-  /// Dégradé linéaire pour les boutons d'action et éléments mis en avant
-  static const LinearGradient primaryGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [primaryMint, primaryTeal],
-  );
+  static const Color sellerAccent = Color(0xFF10B981); // Vert émeraude (Mode Vendeur)
+  static const Color buyerAccent = Color(0xFFE65100); // Orange (Mode Acheteur)
+  static const Color accent = Color(0xFFE65100);
 
-  /// Dégradé linéaire doux pour les cartes et conteneurs interactifs
-  static const LinearGradient cardGradientDark = LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [
-      Color(0x1F2DD4BF), // primaryMint avec 12% d'opacité
-      Color(0x050F766E), // primaryTeal avec 2% d'opacité
-    ],
-  );
+  // Palette Light
+  static const Color backgroundLight = Color(0xFFF7F7F8);
+  static const Color surfaceLight = Color(0xFFFFFFFF);
+  static const Color textPrimaryLight = Color(0xFF0B1526);
+  static const Color textSecondaryLight = Color(0xFF6B7280);
+  static const Color borderLight = Color(0xFFE6E6E8);
+  static const Color inputFillLight = Color(0xFFF2F3F5);
 
-  // ==========================================
-  // MODE SOMBRE (Thème Principal / Apaisant)
-  // ==========================================
-  static const Color darkBackgroundDeep = Color(
-    0xFF0F172A,
-  ); // Bleu nuit très sombre
-  static const Color darkBackgroundSlate = Color(
-    0xFF1E293B,
-  ); // Anthracite ardoise
-  static const Color darkSurfaceCard = Color(0xFF334155); // Surface des cartes
+  // Palette Dark (Obligatoire §8 & §14.5)
+  static const Color backgroundDark = Color(0xFF070E18);
+  static const Color surfaceDark = Color(0xFF111C2D);
+  static const Color textPrimaryDark = Color(0xFFF7F7F8);
+  static const Color textSecondaryDark = Color(0xFF9CA3AF);
+  static const Color borderDark = Color(0xFF1F2F46);
+  static const Color inputFillDark = Color(0xFF162338);
 
-  // Textes en mode sombre
-  static const Color darkTextPrimary = Color(
-    0xFFF8FAFC,
-  ); // Blanc cassé (haute lisibilité)
-  static const Color darkTextSecondary = Color(
-    0xFF94A3B8,
-  ); // Gris bleu (secondaire)
-  static const Color darkTextMuted = Color(
-    0xFF64748B,
-  ); // Gris discret (placeholders)
-
-  /// Dégradé radial pour le fond d'écran principal en Mode Sombre
-  static const RadialGradient darkBackgroundRadial = RadialGradient(
-    center: Alignment(-0.6, -0.6), // Orienté vers le haut/gauche
-    radius: 1.2,
-    colors: [darkBackgroundSlate, darkBackgroundDeep],
-    stops: [0.0, 0.8],
-  );
-
-  // ==========================================
-  // MODE CLAIR (Thème Secondaire)
-  // ==========================================
-  static const Color lightBackground = Color(0xFFF8FAFC);
-  static const Color lightSurface = Color(0xFFFFFFFF);
-
-  // Textes en mode clair
-  static const Color lightTextPrimary = Color(0xFF0F172A);
-  static const Color lightTextSecondary = Color(0xFF475569);
-
-  // ==========================================
-  // ÉTATS & NOTIFICATIONS (Gamification Douce)
-  // ==========================================
-  static const Color success = Color(0xFF10B981); // Vert coche / régularité
-  static const Color warning = Color(0xFBF59E0B); // Orange doux
-  static const Color error = Color(0xFFEF4444); // Rouge erreur
+  // Sémantique
+  static const Color success = Color(0xFF2E7D4F);
+  static const Color warning = Color(0xFFD9A441);
+  static const Color error = Color(0xFFC62828);
+  static const Color info = Color(0xFF3B82F6);
 }

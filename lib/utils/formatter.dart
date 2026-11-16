@@ -1,4 +1,6 @@
+import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:mindset/services/currency_service.dart';
 
 class Formatter {
   static String? date(DateTime? date, {String format = 'dd MMM yyyy - HH:mm'}) {
@@ -8,9 +10,11 @@ class Formatter {
     return DateFormat(format).format(date);
   }
 
-  static String price(num price, {String devise = ' F'}) {
-    var f = NumberFormat('###,###,###,###');
-
-    return "${f.format(price)} $devise";
+  static String price(num price, {String? devise}) {
+    if (devise == null && Get.isRegistered<CurrencyService>()) {
+      return CurrencyService.to.format(price);
+    }
+    var f = NumberFormat('###,###,###,###', 'fr_FR');
+    return "${f.format(price).replaceAll(',', ' ')} ${devise ?? 'FCFA'}";
   }
 }

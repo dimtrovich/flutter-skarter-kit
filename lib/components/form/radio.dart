@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:mindset/utils/app_colors.dart';
 
 class AppRadio extends StatelessWidget {
   final void Function(dynamic)? onChanged;
@@ -20,7 +21,7 @@ class AppRadio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RadioListTile(
-      activeColor: Colors.orange,
+      activeColor: AppColors.secondary,
       selected: selected,
       title: Text(title),
       value: value,

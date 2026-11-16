@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mindset/utils/app_colors.dart';
 
 class OutlineButton extends StatelessWidget {
   const OutlineButton({super.key, this.onTap, this.title});
@@ -9,21 +10,21 @@ class OutlineButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
+      borderRadius: BorderRadius.circular(50.0),
       child: Container(
         height: 45,
         width: 120,
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50.0),
-          color: const Color(0xffffffff),
-          border: Border.all(width: 3.0, color: const Color(0xFF444444)),
+          color: AppColors.secondary,
         ),
         child: Center(
           child: Text(
             "$title",
             style: const TextStyle(
-              color: Color(0xff707070),
-              fontSize: 17,
+              color: Colors.white,
+              fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
           ),

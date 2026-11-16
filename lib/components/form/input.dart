@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mindset/utils/app_colors.dart';
 
 class AppInput extends StatelessWidget {
   final bool autofocus;
@@ -22,9 +23,12 @@ class AppInput extends StatelessWidget {
   final String? placeholder;
   final bool readOnly;
   final Widget? suffixIcon;
+  final Widget? prefixIcon;
   final String? type;
   final String? value;
   final RxString? vmodel;
+  final Color? textColor;
+  final Color? hintColor;
 
   const AppInput({
     super.key,
@@ -48,13 +52,18 @@ class AppInput extends StatelessWidget {
     this.placeholder,
     this.readOnly = false,
     this.suffixIcon,
+    this.prefixIcon,
     this.type,
     this.value,
     this.vmodel,
+    this.textColor,
+    this.hintColor,
   });
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return TextField(
       autocorrect: true,
       autofocus: autofocus,
@@ -76,14 +85,40 @@ class AppInput extends StatelessWidget {
       },
       onTap: onTap,
       readOnly: readOnly,
+      style: TextStyle(
+        fontSize: 15,
+        color: textColor ??
+            (isDark ? AppColors.textPrimaryDark : AppColors.textPrimaryLight),
+      ),
       decoration: InputDecoration(
-        border: _border(),
-        contentPadding: contentPadding,
-        errorText: errorText,
-        focusedBorder: _focusedBorder(),
-        labelText: label,
+        filled: true,
+        fillColor: color ??
+            (isDark ? AppColors.inputFillDark : AppColors.inputFillLight),
         hintText: placeholder,
+        hintStyle: TextStyle(
+          color: hintColor ??
+              (isDark
+                  ? AppColors.textSecondaryDark
+                  : AppColors.textSecondaryLight),
+          fontSize: 15,
+        ),
+        labelText: label,
+        errorText: errorText,
+        prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
+        contentPadding: contentPadding ??
+            const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        border: _border(),
+        enabledBorder: _enabledBorder(),
+        focusedBorder: _focusedBorder(),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.error, width: 1),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.error, width: 1.5),
+        ),
       ),
     );
   }
@@ -135,16 +170,21 @@ class AppInput extends StatelessWidget {
     return border!;
   }
 
+  InputBorder _enabledBorder() {
+    return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: BorderSide.none,
+    );
+  }
+
   InputBorder _focusedBorder() {
     if (null != focusedBorder) {
       return focusedBorder!;
     }
     
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12.0),
-      borderSide: const BorderSide(color: Colors.orange),
+      borderRadius: BorderRadius.circular(12),
+      borderSide: const BorderSide(color: AppColors.secondary, width: 1.5),
     );
   }
-
-
 }

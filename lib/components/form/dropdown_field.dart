@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mindset/utils/app_colors.dart';
 
 class AppDropdownField extends StatelessWidget {
   final String? errorText;
@@ -21,6 +22,8 @@ class AppDropdownField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return DropdownButtonFormField<dynamic>(
       decoration: InputDecoration(
         labelText: label,
@@ -35,7 +38,7 @@ class AppDropdownField extends StatelessWidget {
           vmodel!.value = value;
         }
       },
-      dropdownColor: Colors.white,
+      dropdownColor: isDark ? AppColors.surfaceDark : Colors.white,
       initialValue: vmodel!.value,
     );
   }
